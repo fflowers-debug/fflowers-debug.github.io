@@ -1,0 +1,21 @@
+body {
+
+    text-align: center;
+    color: grey;
+}
+
+.bi {
+    font-size: 2em;
+}
+
+h1 {
+    font-family: "Archivo Black", sans-serif;
+    text-align: center;
+    font-weight: 800;
+    color: #d97a3a;
+
+}
+
+.banner-img {
+    max-width: 75%;
+}
