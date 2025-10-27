@@ -1,0 +1,377 @@
+/*********************************************************************/
+/***** BEGIN DESIGNPLUS THEME IMPORT & CUSTOMIZATION  ****************/
+/*********************************************************************/
+/* Import statements need to be at the top of your CSS file */
+
+/*** Legacy Sidebar ***/
+/* For Main CSS file */
+@import url(https://designtools.ciditools.com/css/themes.css);
+/* For Mobile app CSS file */
+/*@import url(https://designtools.ciditools.com/css/app.css);*/
+/* Institution color customizations */
+/*@import url(https://designtools.ciditools.com/css/inst_theme_overrides.css); // we comment this out , bc it causes color changes in some courses. 3/25/2024
+
+/*** New Sidebar ***/
+/* For Main CSS files */
+@import url(https://designplus.ciditools.com/css/content.css);
+@import url(https://designplus.ciditools.com/css/editor.css);
+/* For Mobile app CSS file */
+/*@import url(https://designplus.ciditools.com/css/mobile.css);*/
+
+:root {
+    --dt-color-primary: #900;
+    --dt-color-primary-contrast: #FFFFFF;
+    --dt-color-primary-dark-text: #900;
+    --dt-color-secondary: #e6e6e6;
+    --dt-color-secondary-contrast: #000000;
+    --dt-color-secondary-dark-text: #e6e6e6;
+    --dt-color-accent: #FFD200;
+    --dt-color-accent-contrast: #000000;
+    --dt-color-accent-dark-text: #96652A;
+    --dt-color-gray: #7f7f7f;
+    --dt-color-gray-contrast: #000000;
+    --dt-color-gray-dark-text: #7f7f7f;
+    --dt-color-white: #FFFFFF;
+    --dt-color-white-contrast: #000000;
+    --dt-color-white-dark-text: #707070;
+    --dt-color-graybg: #E6E6E6;
+    --dt-color-graybg-contrast: #000000;
+}
+
+
+
+/*********************************************************************/
+/***** END DESIGNPLUS THEME IMPORT & CUSTOMIZATION   *****************/
+/*********************************************************************/
+
+/*@import url(https://elearn.usu.edu/designtools/production/css/themes.css); */
+
+
+ @charset "UTF-8";
+/* CSS Document */
+
+
+/*  helpbutton: for help button on the right side bar */
+#help-link{
+	background-color:#900;
+	color:white;
+	width:240px;
+	
+}
+
+/*remove blue background on mobile device */
+html {
+	background-image: none;
+	color:#fff;
+}
+/* enlarge login logo */
+.ic-Login-header__logo img {
+	max-width: 360px;
+	padding-left: 20px;
+}
+/************** Changes on login page ***********/
+
+
+.ic-Login__body {
+	padding: 15px 20px 0px 20px;
+}
+/***************Changing hyperlink color on log in page***************/
+
+div.umdFooter .external span {
+	color: #ffffff;
+	text-align: center;
+	font-size: 12px;
+	max-width: 450px;
+}
+.umdFooter {
+	max-width: 450px;
+	text-align: center;
+	font-style: normal;
+	font-size: 12px;
+	padding: 10px 0 0 0;
+	color: #ffffff;
+}
+.umdFooter a:link, .umdFooter a:visited {
+	color: #ffffff;
+	text-align: center;
+	font-size: 12px;
+}
+/**************Removing hyperlink icon ********************/
+
+a.external .ui-icon-extlink {
+	display: none;
+}
+/****** Change log in button color and position   *******/
+.ic-Login__actions button.Button--login {
+	background: #e4e4e4 none repeat scroll 0 0;
+	border: 1px solid #e4e4e4;
+	color: #000;
+	padding: 10px;
+	margin: 10px 50px;
+	width: 100px;
+	font-weight: bold;
+	font-size: 16px;
+	border-radius: 5px;
+}
+.ic-Login__actions button.Button--login:hover {
+	background: #e4e4e4 none repeat scroll 0 0;
+	color: #000;
+	padding: 10px;
+	margin: 10px 50px;
+	width: 100px;
+	border: 1px solid #999999;
+	font-weight: bold;
+}
+
+
+
+/********Disable Canvas footer ********************/
+.ic-Login-footer .ic-Login-footer__links {
+	display: none;
+}
+/***********Changing UMD footer style **************/
+
+.umdSecurityfooter {
+	font-size: 12px;
+	color: #333333;
+	padding: 5px 0 0 5px;
+	line-height: 100%;
+	text-align: center;
+	margin-top: 20px;
+	width: 450px;
+	font-family: Arial;
+}
+.umdSecurityfooterMobile {
+	font-size: 12px;
+	color: #ffffff;
+	padding: 5px 0 0 0;
+	line-height: 100%;
+	text-align: center;
+	margin-top: 10px;
+	font-family: Arial;
+	max-width: 330px;
+}
+/* Remove logout icon  */
+.ReactTray__link-list .ReactTray-list-item__link i[class*="icon-"], .ReactTray__link-list .ReactTray-list-item__link i[class^="icon-"] {
+	display: none;
+}
+/*******/
+.umdSecurityfooter a:link, .umdSecurityfooter a:visited {
+	color: #0050a1;
+	font-size: 12px;
+	font-family: Arial;
+}
+.umdSecurityfooterMobile a:link, .umdSecurityfooterMobile a:visited {
+	color: #0050a1;
+	font-size: 12px;
+	font-family: Arial;
+}
+/**************** Changing width of log in page for UMD logo display  ************/
+.ic-Login__header .ic-Login__header__logo img {
+	max-width: 400px;
+}
+.ic-Login-header__logo {
+	flex: 0 0 400px;
+}
+/**************** Adding background image in the log in page   *************/
+.ic-Login__content {
+	max-width: 450px;
+	background: url("https://lts.umd.edu/CanvasUI/background1.png") no-repeat !important;
+	height: 430px;
+	width: 665px;
+	box-shadow: 0 4px 20px -2px #000000;
+	padding: 0px;
+}
+/**** Changing Instructure logo position ***/
+
+.ic-Login-footer .ic-Login-footer__logo-link {
+	margin: -20px;
+}
+/*************** Hide stay log in check box in log in page  ****************/
+input#pseudonym_session_remember_me {
+	display: none;
+}
+label[for="pseudonym_session_remember_me"] {
+	display: none;
+}
+input#pseudonym_session_unique_id {
+	margin: 0 0 0 30px;
+	width: 80%;
+}
+input#pseudonym_session_password {
+	width: 80%;
+	margin: 0 0 0 30px;
+}
+
+
+label[for="pseudonym_session_unique_id"] {
+	margin: 5px 5px 5px 30px;
+}
+label[for="pseudonym_session_password"] {
+	margin: 5px 5px 5px 30px;
+}
+.ic-Login__link {
+	margin: 5px 5px 5px 30px;
+	font-weight: bold;
+}
+/******* Changing Overlay Color on Main Frame ************/
+  
+.ReactTray__Overlay.ReactTray__Overlay--after-open {
+	background: rgba(128, 128, 128, 0.8) none repeat scroll 0% 0%;
+}
+/**************Removing hyperlink icon ********************/
+
+a.external .ui-icon-extlink {
+	display: none;
+}
+/***************Changing hyperlink color ***************/
+.ic-Login__body {
+	padding: 20px;
+	margin: 0px;
+}
+
+/******Changing style in second level  */
+/* main level navigation  menu*/
+.ic-app-header__menu-list-link:hover, .ic-app-header__menu-list-link:focus {
+	background-color: #e21833;
+}
+.ic-app-main-and-right-side {
+	box-shadow: -3px 0px 5px rgba(0,0,0,0.2);
+}
+ .ReactTray-list-item: {
+ font-family:Arial;
+ color: #333333;
+}
+.ReactTray-list-item:hover {
+	font-family: Arial;
+	color: #333333;
+}
+.ReactTray-list-item:active {
+	font-family: Arial;
+	color: #ffffff;
+}
+i.icon-syllabus::before {
+	font-size: 25px;
+	text-align: center;
+}
+i.icon-off::before {
+	font-size: 25px;
+	text-align: center;
+}
+.list-view {
+	font-family: Arial;
+	font-size: 14px;
+	color: #333333;
+}
+.list-view a.active {
+	font-family: Arial;
+	color: #FFFFFF;
+	font-weight: bold;
+	background-color: #6B6B6B;
+	font-size: 14px;
+}
+.list-view a.active:hover {
+	font-family: Arial;
+	color: #FFFFFF;
+	font-weight: bold;
+	background-color: #6B6B6B;
+	font-size: 14px;
+}
+.list-view a.hover {
+	font-family: Arial;
+	color: #333333;
+	font-weight: bold;
+	background-color: #e4e4e4;
+	font-size: 14px;
+}
+/* for mobile log in page */
+
+
+.face {
+	background-color: #990000;
+	text-align: center;
+	max-width: 300px;
+	background: url("https://onizuka.umd.edu/canvas-related/Css/background1.png") no-repeat !important;
+	margin-top: 30px;
+}
+#f1_container {
+	/*background-image: url("https://onizuka.umd.edu/canvas-related/Css/elms_umd_logo_v.png");*/
+
+	background-size: 90%;
+	margin-bottom: 30px;
+	margin-top: -20px;
+}
+button.btn.btn-primary.btn-large {
+	background-color: #e6e6e6;
+	font-weight: bold;
+	color: #000000;
+}
+/*** sub menu  */
+
+.ReactTray-list-item__link {
+	font-family: Arial;
+	color: #333333;
+	font-size: 14px;
+}
+.ReactTray-list-item__link:hover {
+	font-family: Arial;
+	color: #333333;
+	font-size: 14px;
+	text-decoration: none;
+}
+.ReactTray-list-item__helper-text {
+	text-decoration: none;
+	color: #333333;
+	font-family: Arial;
+	font-size: 10px;
+}
+.ReactTray__link-list .ReactTray-list-item__link:hover {
+	text-decoration: underline;
+	color: #333333;
+	font-family: Arial;
+	font-size: 14px;
+}
+/***** Remove icon for logout under Account *****/
+.ReactTray-list-item__link .icon-off {
+	display: none;
+}
+/**** change text color on logout page  */
+
+
+.Button--logout-confirm {
+	color: #000;
+}
+.Button--logout-confirm:hover {
+	color: #000;
+}
+.Button button-sidebar-wide {
+	width: 150px;
+}
+
+
+/* remove view grade on the bottom on dashboard  */
+a.Button button-sidebar-wide {
+	display: none;
+}
+
+
+/*remove CourseEvalUMD and BOX link under Account   */
+
+a.context_external_tool_22347{
+	display:none;
+}
+
+/* 8/29/2017  change mobile UI*/
+
+.mobileLogin-Header{
+	margin-top:30px;
+	margin-left:35px;
+	background: url("https://lts.umd.edu/CanvasUI/UMDlogo.png") no-repeat;
+	
+}
+
+.Button.Button--primary.Button--block{
+	background-color:#c7cdd1;
+}
+
+
